@@ -1,6 +1,8 @@
 package pl.bookstore.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="publishers")
@@ -17,6 +19,10 @@ public class Publisher {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    @OneToMany(cascade=CascadeType.ALL)
+    @JoinColumn(name="id_publisher")
+    private List<Book> books = new ArrayList<>();
 
     public void setName(String name) {
         this.name = name;
