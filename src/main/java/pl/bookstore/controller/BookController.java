@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import pl.bookstore.dao.BookDao;
+import pl.bookstore.dao.PublisherDao;
 import pl.bookstore.entity.Book;
+
 import java.util.List;
 
 @RequestMapping("/book")
@@ -14,16 +16,19 @@ public class BookController {
     @Autowired
     BookDao bookDao;
 
+    @Autowired
+    PublisherDao publisherDao;
+
     @GetMapping("/add/{title}/{author}/{publisher}")
     @ResponseBody
     public String add(@PathVariable String title,
                       @PathVariable String author,
-                      @PathVariable String publisher) {
+                      @PathVariable Long publisher) {
 
         Book book = new Book();
         book.setTitle(title);
         book.setAuthor(author);
-        book.setPublisher(publisher);
+        publisherDao.findById(publisher).getBooks().add(book);
 
 //        rating and description not included
         bookDao.save(book);

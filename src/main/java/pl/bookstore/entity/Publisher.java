@@ -17,10 +17,11 @@ public class Publisher {
         return "Publisher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", books=" + books +
                 '}';
     }
 
-    @OneToMany(cascade=CascadeType.ALL)
+    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
     @JoinColumn(name="id_publisher")
     private List<Book> books = new ArrayList<>();
 
@@ -35,4 +36,18 @@ public class Publisher {
     public String getName() {
         return name;
     }
+
+    public List<Book> getBooks() {
+        return this.books;
+    }
+
+    public void addBook(Book book){
+        books.add(book);
+
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+
 }

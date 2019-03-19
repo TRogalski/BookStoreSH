@@ -1,6 +1,7 @@
 package pl.bookstore.dao;
 
 import org.springframework.stereotype.Repository;
+import pl.bookstore.entity.Book;
 import pl.bookstore.entity.Publisher;
 
 
@@ -36,5 +37,9 @@ public class PublisherDao {
     public List<Publisher> findAll() {
         Query query = entityManager.createQuery("SELECT P FROM Publisher P");
         return query.getResultList();
+    }
+
+    public void addBook(Book book){
+
     }
 }
