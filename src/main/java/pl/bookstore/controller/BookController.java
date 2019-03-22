@@ -39,13 +39,53 @@ public class BookController {
 
         book.getAuthors().add(author);
 
-        Publisher publisher=new Publisher();
+        Publisher publisher = new Publisher();
         publisher.setName("Nowy");
 
         book.setPublisher(publisher);
-        publisher.getBooks().add(book);
 
         bookDao.save(book);
+
+        return "The book has been saved: \n" + book.toString();
+    }
+
+    @GetMapping("/edit")
+    @ResponseBody
+    public String edit() {
+
+        Book book = bookDao.findById(1L);
+        book.setTitle("Czarne dziury");
+
+        Author author = new Author();
+        author.setFirstName("Stephen");
+        author.setLastName("Hawking");
+
+        book.getAuthors().add(author);
+
+        bookDao.update(book);
+
+        return "The book has been saved: \n" + book.toString();
+    }
+
+    @GetMapping("/edit2")
+    @ResponseBody
+    public String edit2() {
+
+        Book book = bookDao.findById(1L);
+        book.setTitle("Czarne dziury");
+
+
+        Author author = new Author();
+        author.setLastName("ziemniaczany");
+
+
+        Publisher publisher = new Publisher();
+        publisher.setName("Nowy2");
+
+        book.getAuthors().add(author);
+        book.setPublisher(publisher);
+
+        bookDao.update(book);
 
         return "The book has been saved: \n" + book.toString();
     }

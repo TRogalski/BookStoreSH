@@ -8,38 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="36f6ba94-0c03-4f8d-a552-1565b67de6fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PublisherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PublisherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/AuthorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PublisherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PublisherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Publisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/META-INF/bookstoreSH.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/META-INF/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/META-INF/sql/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/AuthorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/PublisherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/PublisherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/AuthorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/AuthorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/BookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/PublisherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/PublisherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Author.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Publisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/bookstoreSH.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/sql/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/AuthorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/PublisherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/PublisherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/AuthorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/AuthorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/BookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/PublisherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/PublisherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Publisher.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-766">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1048#1049#0" expanded="true" />
@@ -88,10 +60,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Author.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1195#1196#0" expanded="true" />
@@ -134,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="88">
+              <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,9 +187,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/sql/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Publisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" />
       </list>
     </option>
   </component>
@@ -395,7 +379,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553286498740" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553289422925" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -512,12 +496,12 @@
       <workItem from="1552840464757" duration="9844000" />
       <workItem from="1553029290307" duration="10989000" />
       <workItem from="1553112175151" duration="7377000" />
-      <workItem from="1553282534093" duration="6912000" />
+      <workItem from="1553282534093" duration="8721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40963000" />
+    <option name="totallyTimeSpent" value="42772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -612,16 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/dao/AuthorDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -669,10 +643,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Publisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
@@ -689,34 +677,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="465">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Publisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-766">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
@@ -729,6 +703,16 @@
             <element signature="e#1355#1356#0" expanded="true" />
             <element signature="e#780#781#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
