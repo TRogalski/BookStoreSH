@@ -8,6 +8,7 @@ import pl.bookstore.entity.Book;
 import pl.bookstore.entity.Publisher;
 
 import java.util.List;
+import java.util.Set;
 
 @RequestMapping("/publisher")
 @Controller
@@ -28,37 +29,4 @@ public class PublisherController {
         return "The publisher has been saved: \n" + publisher.toString();
     }
 
-    @GetMapping("/remove/{id}")
-    @ResponseBody
-    public String removeById(@PathVariable Long id) {
-        Publisher publisher = publisherDao.findById(id);
-        publisherDao.delete(publisher);
-//        may not exist TBD
-        return "The publisher has been removed";
-    }
-
-    @GetMapping("/edit/{id}/{name}")
-    @ResponseBody
-    public String editById(@PathVariable Long id,
-                           @PathVariable String name) {
-        Publisher publisher = publisherDao.findById(id);
-        publisher.setName(name);
-        publisherDao.update(publisher);
-
-        return "The changes have been saved";
-    }
-
-    @GetMapping("/getbyid/{id}")
-    @ResponseBody
-    public String getById(@PathVariable Long id) {
-        Publisher publisher = publisherDao.findById(id);
-        return "The publisher has been found: \n" + publisher.toString();
-    }
-
-    @GetMapping("/showall")
-    @ResponseBody
-    public String showAll() {
-        List<Publisher> publishers = publisherDao.findAll();
-        return "found publishers: \n" + publishers.toString();
-    }
 }

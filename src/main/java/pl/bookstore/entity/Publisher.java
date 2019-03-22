@@ -1,8 +1,9 @@
 package pl.bookstore.entity;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Table(name="publishers")
@@ -17,37 +18,22 @@ public class Publisher {
         return "Publisher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", books=" + books +
                 '}';
     }
 
-    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-    @JoinColumn(name="id_publisher")
-    private List<Book> books = new ArrayList<>();
-
-    public void setName(String name) {
-        this.name = name;
+    public Publisher() {
     }
 
     public Long getId() {
         return id;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
-    }
-
-    public List<Book> getBooks() {
-        return this.books;
-    }
-
-    public void addBook(Book book){
-        books.add(book);
-
-    }
-
-    public void setBooks(List<Book> books) {
-        this.books = books;
     }
 
 }

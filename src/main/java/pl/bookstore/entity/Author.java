@@ -1,6 +1,10 @@
 package pl.bookstore.entity;
 
+import com.sun.istack.internal.NotNull;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.*;
 
 @Entity
 @Table(name="authors")
@@ -10,6 +14,9 @@ public class Author {
     private Long id;
     private String firstName;
     private String lastName;
+
+    public Author() {
+    }
 
     @Override
     public String toString() {

@@ -1,7 +1,11 @@
 package pl.bookstore.entity;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "books")
@@ -11,30 +15,54 @@ public class Book {
     private Long id;
     @Column(length = 100, nullable = false)
     private String title;
-    private String author;
     @Column(scale = 2, precision = 4)
     private BigDecimal rating;
-    private String publisher;
     @Column(columnDefinition = "TEXT")
     private String description;
 
     public Book() {
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private Publisher publisher;
+
+    @JoinTable(
+            joinColumns = @JoinColumn(
+                    name = "id_book",
+                    referencedColumnName = "id"
+            ),
+            inverseJoinColumns = @JoinColumn(
+                    name = "id_author",
+                    referencedColumnName = "id"
+            )
+    )
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private Set<Author> authors = new HashSet<>();
 
     @Override
     public String toString() {
         return "Book{" +
-                "id=" + id +
                 ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
                 ", rating=" + rating +
-                ", publisher='" + publisher + '\'' +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
+
+    public Set<Author> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(Set<Author> authors) {
+        this.authors = authors;
     }
 
     public Long getId() {
@@ -49,28 +77,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public BigDecimal getRating() {
         return rating;
     }
 
     public void setRating(BigDecimal rating) {
         this.rating = rating;
-    }
-
-    public String getPublisher() {
-        return publisher;
-    }
-
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
     }
 
     public String getDescription() {

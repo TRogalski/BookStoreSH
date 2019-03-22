@@ -10,6 +10,7 @@ import javax.persistence.Query;
 import javax.transaction.Transactional;
 
 import java.util.List;
+import java.util.Set;
 
 @Repository
 @Transactional
@@ -34,10 +35,6 @@ public class BookDao {
         entityManager.remove(entityManager.contains(book) ? book : entityManager.merge(book));
     }
 
-    public List<Book> findAll() {
-        Query query = entityManager.createQuery("SELECT B FROM Book B");
-        return query.getResultList();
-    }
 
 
 }

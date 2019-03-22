@@ -3,74 +3,51 @@ package pl.bookstore.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import pl.bookstore.dao.AuthorDao;
 import pl.bookstore.dao.BookDao;
 import pl.bookstore.dao.PublisherDao;
+import pl.bookstore.entity.Author;
 import pl.bookstore.entity.Book;
+import pl.bookstore.entity.Publisher;
 
 import java.util.List;
+import java.util.Set;
 
 @RequestMapping("/book")
 @Controller
 public class BookController {
 
     @Autowired
-    BookDao bookDao;
+    private BookDao bookDao;
 
     @Autowired
-    PublisherDao publisherDao;
+    private PublisherDao publisherDao;
 
-    @GetMapping("/add/{title}/{author}/{publisher}")
+    @Autowired
+    private AuthorDao authorDao;
+
+
+    @GetMapping("/add")
     @ResponseBody
-    public String add(@PathVariable String title,
-                      @PathVariable String author,
-                      @PathVariable Long publisher) {
+    public String add() {
 
         Book book = new Book();
-        book.setTitle(title);
-        book.setAuthor(author);
-        publisherDao.findById(publisher).getBooks().add(book);
+        book.setTitle("1984");
 
-//        rating and description not included
+        Author author = new Author();
+        author.setFirstName("Orwell");
+
+        book.getAuthors().add(author);
+
+        Publisher publisher=new Publisher();
+        publisher.setName("Nowy");
+
+        book.setPublisher(publisher);
+        publisher.getBooks().add(book);
+
         bookDao.save(book);
 
         return "The book has been saved: \n" + book.toString();
     }
 
-    @GetMapping("/remove/{id}")
-    @ResponseBody
-    public String removeById(@PathVariable Long id) {
-        Book book = bookDao.findById(id);
-        bookDao.delete(book);
-//        may not exist TBD
-        return "The book has been removed";
-    }
-
-    @GetMapping("/edit/{id}/{title}/{author}/{publisher}")
-    @ResponseBody
-    public String editById(@PathVariable Long id,
-                           @PathVariable String title,
-                           @PathVariable String author,
-                           @PathVariable String publisher) {
-        Book book = bookDao.findById(id);
-        book.setTitle(title);
-        book.setAuthor(author);
-        book.setPublisher(publisher);
-        bookDao.update(book);
-
-        return "The changes have been saved";
-    }
-
-    @GetMapping("/getbyid/{id}")
-    @ResponseBody
-    public String getById(@PathVariable Long id) {
-        Book book = bookDao.findById(id);
-        return "The book has been found: \n" + book.toString();
-    }
-
-    @GetMapping("/showall")
-    @ResponseBody
-    public String showAll() {
-        List<Book> books = bookDao.findAll();
-        return "found books: \n" + books.toString();
-    }
 }

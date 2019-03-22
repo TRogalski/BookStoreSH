@@ -10,6 +10,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Set;
 
 @Repository
 @Transactional
@@ -34,12 +35,4 @@ public class PublisherDao {
         entityManager.remove(entityManager.contains(publisher) ? publisher : entityManager.merge(publisher));
     }
 
-    public List<Publisher> findAll() {
-        Query query = entityManager.createQuery("SELECT P FROM Publisher P");
-        return query.getResultList();
-    }
-
-    public void addBook(Book book){
-
-    }
 }
