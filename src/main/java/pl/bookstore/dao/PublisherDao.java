@@ -1,16 +1,13 @@
 package pl.bookstore.dao;
 
 import org.springframework.stereotype.Repository;
-import pl.bookstore.entity.Book;
 import pl.bookstore.entity.Publisher;
-
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Set;
 
 @Repository
 @Transactional
@@ -33,6 +30,11 @@ public class PublisherDao {
 
     public void delete(Publisher publisher) {
         entityManager.remove(entityManager.contains(publisher) ? publisher : entityManager.merge(publisher));
+    }
+
+    public List<Publisher> findAll() {
+        Query query = entityManager.createQuery("SELECT P FROM Publisher P");
+        return query.getResultList();
     }
 
 }

@@ -1,17 +1,22 @@
 package pl.bookstore.entity;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
-import java.util.*;
 
 @Entity
-@Table(name="publishers")
+@Table(name = "publishers")
 public class Publisher {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    public Publisher() {
+    }
+
+    public Publisher(String name) {
+        this.name = name;
+    }
 
     @Override
     public String toString() {
@@ -19,9 +24,6 @@ public class Publisher {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
-    }
-
-    public Publisher() {
     }
 
     public Long getId() {

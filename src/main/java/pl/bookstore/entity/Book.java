@@ -1,7 +1,5 @@
 package pl.bookstore.entity;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.HashSet;

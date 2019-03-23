@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.bookstore.dao.AuthorDao;
 import pl.bookstore.entity.Author;
 
-import java.util.List;
-import java.util.Set;
 
 @RequestMapping("/author")
 @Controller
