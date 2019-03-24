@@ -2,9 +2,8 @@ package pl.bookstore.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import pl.bookstore.dao.AuthorDao;
 import pl.bookstore.dao.BookDao;
 import pl.bookstore.dao.PublisherDao;
@@ -12,8 +11,10 @@ import pl.bookstore.entity.Author;
 import pl.bookstore.entity.Book;
 import pl.bookstore.entity.Publisher;
 
-@RequestMapping("/book")
+import java.util.List;
+
 @Controller
+@RequestMapping("/book")
 public class BookController {
 
     @Autowired
@@ -26,67 +27,52 @@ public class BookController {
     private AuthorDao authorDao;
 
 
-    @GetMapping("/add")
-    @ResponseBody
-    public String add() {
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String showAddBookForm(Model model) {
 
-        Book book = new Book();
-        book.setTitle("1984");
+        model.addAttribute("book", new Book());
 
-        Author author = new Author();
-        author.setFirstName("Orwell");
+        return "book/addBook";
+    }
 
-        book.getAuthors().add(author);
-
-        Publisher publisher = new Publisher();
-        publisher.setName("Nowy");
-
-        book.setPublisher(publisher);
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public String showAddBookForm(@ModelAttribute Book book) {
 
         bookDao.save(book);
 
-        return "The book has been saved: \n" + book.toString();
+        return "redirect:showall";
     }
 
-    @GetMapping("/edit")
-    @ResponseBody
-    public String edit() {
 
-        Book book = bookDao.findById(1L);
-        book.setTitle("Czarne dziury");
-
-        Author author = new Author();
-        author.setFirstName("Stephen");
-        author.setLastName("Hawking");
-
-        book.getAuthors().add(author);
-
-        bookDao.update(book);
-
-        return "The book has been saved: \n" + book.toString();
+    @RequestMapping(value="/showall", method=RequestMethod.GET)
+    public String showAllBooks(Model model){
+        model.addAttribute("books",bookDao.findAll());
+        return "book/list";
     }
 
-    @GetMapping("/edit2")
-    @ResponseBody
-    public String edit2() {
-
-        Book book = bookDao.findById(1L);
-        book.setTitle("Czarne dziury");
-
-
-        Author author = new Author();
-        author.setLastName("ziemniaczany");
-
-
-        Publisher publisher = new Publisher();
-        publisher.setName("Nowy2");
-
-        book.getAuthors().add(author);
-        book.setPublisher(publisher);
-
-        bookDao.update(book);
-
-        return "The book has been saved: \n" + book.toString();
+    @ModelAttribute("publishers")
+    public List<Publisher> publishers() {
+        return publisherDao.findAll();
     }
+
+
+//    @GetMapping("/edit")
+//    @ResponseBody
+//    public String edit() {
+//
+//        Book book = bookDao.findById(1L);
+//        book.setTitle("Czarne dziury");
+//
+//        Author author = new Author();
+//        author.setFirstName("Stephen");
+//        author.setLastName("Hawking");
+//
+//        book.getAuthors().add(author);
+//
+//        bookDao.update(book);
+//
+//        return "The book has been saved: \n" + book.toString();
+//    }
+
 
 }

@@ -38,4 +38,11 @@ public class BookDao {
         return query.getResultList();
     }
 
+//  custom dao
+
+    public List<Book> getRatingList(Integer rating) {
+        Query query = entityManager.createQuery(String.format("SELECT B FROM Book B WHERE B.rating=%d", rating));
+        return query.getResultList();
+    }
+
 }

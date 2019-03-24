@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.bookstore.dao.PublisherDao;
 import pl.bookstore.entity.Publisher;
 
-@RequestMapping("/publisher")
 @Controller
+@RequestMapping("/publisher")
 public class PublisherController {
 
     @Autowired

@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.bookstore.dao.AuthorDao;
 import pl.bookstore.entity.Author;
 
-
-@RequestMapping("/author")
 @Controller
+@RequestMapping("/author")
 public class AuthorController {
 
     @Autowired

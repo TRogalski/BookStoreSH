@@ -8,17 +8,25 @@ import java.util.Set;
 @Entity
 @Table(name = "books")
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(length = 100, nullable = false)
     private String title;
-    @Column(scale = 2, precision = 4)
-    private BigDecimal rating;
+    private Integer rating;
     @Column(columnDefinition = "TEXT")
     private String description;
 
     public Book() {
+    }
+
+    public Book(String title, Integer rating, String description, Publisher publisher, Set<Author> authors) {
+        this.title = title;
+        this.rating = rating;
+        this.description = description;
+        this.publisher = publisher;
+        this.authors = authors;
     }
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
@@ -75,11 +83,11 @@ public class Book {
         this.title = title;
     }
 
-    public BigDecimal getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(BigDecimal rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 
