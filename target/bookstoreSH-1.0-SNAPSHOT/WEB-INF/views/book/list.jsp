@@ -17,6 +17,7 @@
         <th>Publisher</th>
         <th>Author</th>
         <th></th>
+        <th></th>
     </tr>
     <c:forEach items="${books}" var="book">
         <tr>
@@ -25,7 +26,7 @@
             <td>${book.description}</td>
             <td>${book.publisher}</td>
             <td>${book.authors}</td>
-            <td><a href="">Edit</a></td>
+            <td><a href="edit/${book.id}">Edit</a></td>
         </tr>
     </c:forEach>
 </table>

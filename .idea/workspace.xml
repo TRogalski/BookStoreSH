@@ -7,43 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36f6ba94-0c03-4f8d-a552-1565b67de6fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PersonDetailsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/PersonDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addBook.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/addPerson.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/addStudent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/remove.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PublisherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PublisherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/AuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/PublisherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/controller/PublisherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/AuthorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/AuthorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/BookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/PublisherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/dao/PublisherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Author.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/classes/pl/bookstore/entity/Publisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/AuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/views/book/addBook.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/views/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstoreSH-1.0-SNAPSHOT/WEB-INF/views/book/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/PublisherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/controller/PublisherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/AuthorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/AuthorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/BookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/PublisherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/dao/PublisherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Author.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/bookstore/entity/Publisher.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,29 +48,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1929#1930#0" expanded="true" />
+                <element signature="e#1957#1958#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addBook.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="159">
+              <caret line="67" column="67" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1319#1320#0" expanded="true" />
@@ -105,10 +83,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/remove.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="204">
+              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -122,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/addPerson.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="51" />
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -159,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/PersonDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PersonDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/PersonDetailsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/dao/BookDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/AuthorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/PublisherController.java" />
@@ -173,9 +168,13 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/app/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addBook.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/editBook.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/remove.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java" />
       </list>
     </option>
   </component>
@@ -221,8 +220,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
-    <option name="y" value="245" />
+    <option name="x" value="195" />
+    <option name="y" value="316" />
     <option name="width" value="1520" />
     <option name="height" value="893" />
   </component>
@@ -385,7 +384,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553448841272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553454340614" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -505,18 +504,18 @@
       <workItem from="1553112175151" duration="7377000" />
       <workItem from="1553282534093" duration="9018000" />
       <workItem from="1553359098324" duration="6993000" />
-      <workItem from="1553440841605" duration="6535000" />
+      <workItem from="1553440841605" duration="11768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56597000" />
+    <option name="totallyTimeSpent" value="61830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="245" width="1520" height="893" extended-state="0" />
+    <frame x="195" y="316" width="1520" height="893" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3385346" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3385346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -526,7 +525,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993351" visible="true" weight="0.5078534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993351" visible="true" weight="0.5078534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -539,7 +538,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5006649" side_tool="true" weight="0.513089" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32898173" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.325054" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32460734" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -780,49 +779,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/addPerson.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="51" />
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="204">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/remove.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/bookstore/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        <state relative-caret-position="159">
+          <caret line="67" column="67" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1319#1320#0" expanded="true" />
             <element signature="e#1364#1365#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>

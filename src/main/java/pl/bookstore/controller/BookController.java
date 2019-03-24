@@ -26,53 +26,56 @@ public class BookController {
     @Autowired
     private AuthorDao authorDao;
 
-
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String showAddBookForm(Model model) {
-
         model.addAttribute("book", new Book());
-
-        return "book/addBook";
+        return "book/add";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String showAddBookForm(@ModelAttribute Book book) {
-
         bookDao.save(book);
-
         return "redirect:showall";
     }
 
 
-    @RequestMapping(value="/showall", method=RequestMethod.GET)
-    public String showAllBooks(Model model){
-        model.addAttribute("books",bookDao.findAll());
+    @RequestMapping(value = "/showall", method = RequestMethod.GET)
+    public String showAllBooks(Model model) {
+        model.addAttribute("books", bookDao.findAll());
         return "book/list";
+    }
+
+    @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
+    public String edit(@PathVariable Long id, Model model) {
+        Book book = bookDao.findById(id);
+        model.addAttribute("book", book);
+        return "book/edit";
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    public String edit(@ModelAttribute Book book) {
+        bookDao.update(book);
+        return "redirect:showall";
+    }
+
+    @RequestMapping(value = "/remove/{id}", method = RequestMethod.GET)
+    public String remove(@PathVariable Long id, Model model) {
+        Book book = bookDao.findById(id);
+        model.addAttribute("book", book);
+        return "book/remove";
+    }
+
+    @RequestMapping(value = "/remove", method = RequestMethod.POST)
+    public String remove(@RequestParam Long id) {
+        Book book = bookDao.findById(id);
+        bookDao.delete(book);
+        return "redirect:showall";
     }
 
     @ModelAttribute("publishers")
     public List<Publisher> publishers() {
         return publisherDao.findAll();
     }
-
-
-//    @GetMapping("/edit")
-//    @ResponseBody
-//    public String edit() {
-//
-//        Book book = bookDao.findById(1L);
-//        book.setTitle("Czarne dziury");
-//
-//        Author author = new Author();
-//        author.setFirstName("Stephen");
-//        author.setLastName("Hawking");
-//
-//        book.getAuthors().add(author);
-//
-//        bookDao.update(book);
-//
-//        return "The book has been saved: \n" + book.toString();
-//    }
 
 
 }
