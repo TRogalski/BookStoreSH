@@ -30,6 +30,7 @@ public class Book {
     }
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "id_publisher")
     private Publisher publisher;
 
     @JoinTable(

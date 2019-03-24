@@ -24,8 +24,12 @@
             <td>${book.title}</td>
             <td>${book.rating}</td>
             <td>${book.description}</td>
-            <td>${book.publisher}</td>
-            <td>${book.authors}</td>
+            <td>${book.publisher.name}</td>
+            <td>
+                <c:forEach items="${book.authors}" var="author">
+                    ${author.firstName}, ${author.lastName}<br>
+                </c:forEach>
+            </td>
             <td><a href="edit/${book.id}">Edit</a></td>
         </tr>
     </c:forEach>
