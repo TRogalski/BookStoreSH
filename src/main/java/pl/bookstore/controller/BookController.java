@@ -34,7 +34,7 @@ public class BookController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String showAddBookForm(@ModelAttribute Book book) {
-        bookDao.save(book);
+        bookDao.update(book);
         return "redirect:showall";
     }
 
@@ -77,5 +77,9 @@ public class BookController {
         return publisherDao.findAll();
     }
 
+    @ModelAttribute("authors")
+    public List<Author> authors() {
+        return authorDao.findAll();
+    }
 
 }

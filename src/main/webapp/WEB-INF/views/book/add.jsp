@@ -13,7 +13,7 @@
     Rating: <form:input type="TEXT" path="rating"/><br>
     Description: <form:input type="TEXT" path="description"/><br>
     Publisher: <form:select path="publisher" items="${publishers}" itemLabel="name" itemValue="id"/><br>
-    <%--Authors: <form:textarea path="authors"/><br>--%>
+    Authors: <form:select multiple="true" items="${authors}" itemLabel="lastName" itemValue="id" path="authors"/><br>
 
     <input type="submit" value="Submit"/>
 </form:form>

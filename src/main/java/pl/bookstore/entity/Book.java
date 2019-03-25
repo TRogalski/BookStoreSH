@@ -2,7 +2,9 @@ package pl.bookstore.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -21,7 +23,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, Integer rating, String description, Publisher publisher, Set<Author> authors) {
+    public Book(String title, Integer rating, String description, Publisher publisher, List<Author> authors) {
         this.title = title;
         this.rating = rating;
         this.description = description;
@@ -45,7 +47,7 @@ public class Book {
     )
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    private Set<Author> authors = new HashSet<>();
+    private List<Author> authors = new ArrayList<>();
 
     @Override
     public String toString() {
@@ -64,11 +66,11 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public Set<Author> getAuthors() {
+    public List<Author> getAuthors() {
         return authors;
     }
 
-    public void setAuthors(Set<Author> authors) {
+    public void setAuthors(List<Author> authors) {
         this.authors = authors;
     }
 
