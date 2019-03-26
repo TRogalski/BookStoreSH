@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>AddBook</title>
+    <title>Add book</title>
 </head>
 <body>
 <form:form method="post" modelAttribute="book">
@@ -18,7 +18,7 @@
     <input type="submit" value="Submit"/>
 </form:form>
 
-<a href="/book/showall">List books</a>
+<a href="/book/list">List books</a>
 
 </body>
 </html>

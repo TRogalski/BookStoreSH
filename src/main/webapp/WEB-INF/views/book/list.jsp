@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>listBooks</title>
+    <title>Books list</title>
 </head>
 <body>
 
@@ -16,7 +16,6 @@
         <th>Description</th>
         <th>Publisher</th>
         <th>Author</th>
-        <th></th>
         <th></th>
     </tr>
     <c:forEach items="${books}" var="book">

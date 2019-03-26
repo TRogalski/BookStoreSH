@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>EditBook</title>
+    <title>Edit book</title>
 </head>
 <body>
 <form:form method="post" modelAttribute="book" action="/book/edit">
@@ -13,13 +13,13 @@
     Rating: <form:input type="TEXT" path="rating"/><br>
     Description: <form:input type="TEXT" path="description"/><br>
     Publisher: <form:select path="publisher" items="${publishers}" itemLabel="name" itemValue="id"/><br>
-    <%--Authors: <form:textarea path="authors"/><br>--%>
+    Authors: <form:select multiple="true" items="${authors}" itemLabel="lastName" itemValue="id" path="authors"/><br><br>
     <form:hidden path="id" value="${book.id}"></form:hidden>
     <input type="submit" value="Submit"/>
 </form:form>
 
 <a href="/book/remove/${book.id}">Remove</a>
-<a href="/book/showall">List books</a>
+<a href="/book/list">List books</a>
 
 </body>
 </html>

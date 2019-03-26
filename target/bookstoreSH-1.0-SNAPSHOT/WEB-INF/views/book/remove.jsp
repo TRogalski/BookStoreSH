@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>RemoveBook</title>
+    <title>Remove book</title>
 </head>
 <body>
 
@@ -36,7 +36,7 @@
 </form:form>
 
 
-<a href="/book/showall">List</a>
+<a href="/book/list">List</a>
 
 </body>
 </html>

@@ -27,20 +27,20 @@ public class BookController {
     private AuthorDao authorDao;
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String showAddBookForm(Model model) {
+    public String add(Model model) {
         model.addAttribute("book", new Book());
         return "book/add";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String showAddBookForm(@ModelAttribute Book book) {
+    public String add(@ModelAttribute Book book) {
         bookDao.update(book);
-        return "redirect:showall";
+        return "redirect:list";
     }
 
 
-    @RequestMapping(value = "/showall", method = RequestMethod.GET)
-    public String showAllBooks(Model model) {
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String showAll(Model model) {
         model.addAttribute("books", bookDao.findAll());
         return "book/list";
     }
@@ -55,7 +55,7 @@ public class BookController {
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public String edit(@ModelAttribute Book book) {
         bookDao.update(book);
-        return "redirect:showall";
+        return "redirect:list";
     }
 
     @RequestMapping(value = "/remove/{id}", method = RequestMethod.GET)
@@ -69,7 +69,7 @@ public class BookController {
     public String remove(@RequestParam Long id) {
         Book book = bookDao.findById(id);
         bookDao.delete(book);
-        return "redirect:showall";
+        return "redirect:list";
     }
 
     @ModelAttribute("publishers")
