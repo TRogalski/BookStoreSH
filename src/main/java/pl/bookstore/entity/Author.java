@@ -1,6 +1,8 @@
 package pl.bookstore.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="authors")
@@ -10,6 +12,9 @@ public class Author {
     private Long id;
     private String firstName;
     private String lastName;
+
+    @ManyToMany(mappedBy = "authors")
+    private List<Book> books = new ArrayList<>();
 
     public Author() {
     }
@@ -50,5 +55,12 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @PreRemove
+    private void removeAuthorsFromBooks() {
+        for (Book book : books) {
+            book.getAuthors().remove(this);
+        }
     }
 }

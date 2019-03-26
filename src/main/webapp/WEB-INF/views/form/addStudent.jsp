@@ -8,6 +8,8 @@
     <title>AddStudent</title>
 </head>
 <body>
+
+
 <form:form method="post" modelAttribute="student">
     First name: <form:input type="TEXT" path="firstName"/><br>
     Last name: <form:input type="TEXT" path="lastName"/><br>

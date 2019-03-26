@@ -8,13 +8,27 @@
     <title>Add author</title>
 </head>
 <body>
-<form:form method="post" modelAttribute="author">
-    First name: <form:input type="TEXT" path="firstName"/><br>
-    Last name: <form:input type="TEXT" path="lastName"/><br>
-    <input type="submit" value="Submit"/>
-</form:form>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-<a href="/author/list">List authors</a>
+<form:form method="post" modelAttribute="author" class="form-horizontal">
+    <div class="form-group">
+        <label for="firstName" class="control-label col-sm-1">First name:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="firstName" class="form-control" id="firstName"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastName" class="control-label col-sm-1">Last name:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="lastName" class="form-control" id="lastName"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-1">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form:form>
 
 </body>
 </html>

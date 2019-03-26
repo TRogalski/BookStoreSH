@@ -8,15 +8,31 @@
     <title>Edit author</title>
 </head>
 <body>
-<form:form method="post" modelAttribute="author" action="/author/edit">
-    First name: <form:input type="TEXT" path="firstName"/><br>
-    Last name: <form:input type="TEXT" path="lastName"/><br>
-    <form:hidden path="id" value="${author.id}"></form:hidden>
-    <input type="submit" value="Submit"/>
-</form:form>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-<a href="/author/remove/${author.id}">Remove</a>
-<a href="/author/list">List authors</a>
+<form:form method="post" modelAttribute="author" action="/author/edit" class="form-horizontal">
+    <div class="form-group">
+        <label for="firstName" class="control-label col-sm-1">First name:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="firstName" class="form-control" id="firstName"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastName" class="control-label col-sm-1">Last name:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="lastName" class="form-control" id="lastName"/>
+        </div>
+    </div>
+
+    <form:hidden path="id" value="${author.id}"></form:hidden>
+
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-1">
+            <button type="submit" class="btn btn-default">Submit</button>
+            <a href="/author/remove/${author.id}" class="btn btn-default" role="button">Remove</a>
+        </div>
+    </div>
+</form:form>
 
 </body>
 </html>

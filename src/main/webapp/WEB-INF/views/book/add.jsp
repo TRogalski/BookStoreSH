@@ -8,17 +8,47 @@
     <title>Add book</title>
 </head>
 <body>
-<form:form method="post" modelAttribute="book">
-    Title: <form:input type="TEXT" path="title"/><br>
-    Rating: <form:input type="TEXT" path="rating"/><br>
-    Description: <form:input type="TEXT" path="description"/><br>
-    Publisher: <form:select path="publisher" items="${publishers}" itemLabel="name" itemValue="id"/><br>
-    Authors: <form:select multiple="true" items="${authors}" itemLabel="lastName" itemValue="id" path="authors"/><br>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-    <input type="submit" value="Submit"/>
+<form:form method="post" modelAttribute="book" class="form-horizontal">
+    <div class="form-group">
+        <label for="title" class="control-label col-sm-1">Title:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="title" class="form-control" id="title"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="rating" class="control-label col-sm-1">Rating:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="rating" class="form-control" id="rating"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="description" class="control-label col-sm-1">Description:</label>
+        <div class="col-sm-6">
+            <form:input type="TEXT" path="description" class="form-control" id="description"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="publisher" class="control-label col-sm-1">Publishers:</label>
+        <div class="col-sm-6">
+            <form:select path="publisher" items="${publishers}" itemLabel="name" itemValue="id"
+                         class="form-control" id="publisher"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="authors" class="control-label col-sm-1">Authors:</label>
+        <div class="col-sm-6">
+            <form:select multiple="true" items="${authors}" itemLabel="lastName" itemValue="id" path="authors"
+                         class="form-control" id="authors"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-1">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
 </form:form>
-
-<a href="/book/list">List books</a>
 
 </body>
 </html>

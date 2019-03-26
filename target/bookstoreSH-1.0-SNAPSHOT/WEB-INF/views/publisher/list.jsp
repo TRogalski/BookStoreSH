@@ -9,20 +9,24 @@
 </head>
 <body>
 
-<table border="1">
-    <tr>
-        <th>Name</th>
-        <th></th>
-    </tr>
-    <c:forEach items="${publishers}" var="publisher">
-        <tr>
-            <td>${publisher.name}</td>
-            <td><a href="edit/${publisher.id}">Edit</a></td>
-        </tr>
-    </c:forEach>
-</table>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-<a href="/publisher/add">Add</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <c:forEach items="${publishers}" var="publisher">
+            <tr>
+                <td>${publisher.name}</td>
+                <td><a href="edit/${publisher.id}">Edit</a></td>
+            </tr>
+        </c:forEach>
+    </tbody>
+</table>
 
 </body>
 </html>

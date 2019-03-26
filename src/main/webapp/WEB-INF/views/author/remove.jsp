@@ -8,29 +8,37 @@
     <title>Remove book</title>
 </head>
 <body>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-
-<table border="1">
-    <tr>
-        <th>First name</th>
-        <th>Last name</th>
-    </tr>
-    <tr>
-        <td>${author.firstName}</td>
-        <td>${author.lastName}</td>
-    </tr>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>${author.firstName}</td>
+            <td>${author.lastName}</td>
+        </tr>
+    </tbody>
 </table>
 
 <br>
-<form:form method="post" action="/author/remove">
-    <p>Do you confirm that above author should be removed?</p><br>
+
+
+<form:form method="post" action="/author/remove" class="form-horizontal">
+    <p class="h4">Do you confirm that above author should be removed?</p><br>
 
     <input type="hidden" var="id" name="id" value="${author.id}"/>
-    <input type="submit" value="Confirm"/>
+
+    <div class="form-group">
+        <div class="col-sm-1">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
 </form:form>
-
-
-<a href="/author/list">List</a>
 
 </body>
 </html>

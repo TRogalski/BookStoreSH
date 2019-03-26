@@ -4,8 +4,7 @@
     <title>Index</title>
 </head>
 <body>
-<a href="/book/list">List books</a><br>
-<a href="/author/list">List authors</a><br>
-<a href="/publisher/list">List publishers</a>
+<%@ include file="nav-bar.html" %>
+<p>Hello!</p>
 </body>
 </html>

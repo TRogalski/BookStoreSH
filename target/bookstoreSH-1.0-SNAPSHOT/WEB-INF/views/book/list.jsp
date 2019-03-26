@@ -9,32 +9,36 @@
 </head>
 <body>
 
-<table border="1">
-    <tr>
-        <th>Title</th>
-        <th>Rating</th>
-        <th>Description</th>
-        <th>Publisher</th>
-        <th>Author</th>
-        <th></th>
-    </tr>
-    <c:forEach items="${books}" var="book">
-        <tr>
-            <td>${book.title}</td>
-            <td>${book.rating}</td>
-            <td>${book.description}</td>
-            <td>${book.publisher.name}</td>
-            <td>
-                <c:forEach items="${book.authors}" var="author">
-                    ${author.firstName}, ${author.lastName}<br>
-                </c:forEach>
-            </td>
-            <td><a href="edit/${book.id}">Edit</a></td>
-        </tr>
-    </c:forEach>
-</table>
+<%@ include file="/WEB-INF/views/main/nav-bar.html" %>
 
-<a href="/book/add">Add</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Description</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Author</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <c:forEach items="${books}" var="book">
+            <tr>
+                <td>${book.title}</td>
+                <td>${book.rating}</td>
+                <td>${book.description}</td>
+                <td>${book.publisher.name}</td>
+                <td>
+                    <c:forEach items="${book.authors}" var="author">
+                        ${author.firstName}, ${author.lastName}<br>
+                    </c:forEach>
+                </td>
+                <td><a href="edit/${book.id}">Edit</a></td>
+            </tr>
+        </c:forEach>
+    </tbody>
+</table>
 
 </body>
 </html>
