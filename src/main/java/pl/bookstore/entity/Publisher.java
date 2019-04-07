@@ -14,7 +14,7 @@ public class Publisher {
     private String name;
 
     @OneToMany(mappedBy = "publisher")
-    private List<Book> books=new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
 
     public Publisher() {
     }
@@ -50,7 +50,7 @@ public class Publisher {
     @PreRemove
     private void removePublisherFromBooks() {
         for (Book book : books) {
-            if(book.getPublisher().equals(this)){
+            if (book.getPublisher().equals(this)) {
                 book.setPublisher(null);
             }
         }
@@ -58,10 +58,10 @@ public class Publisher {
 
     @Override
     public boolean equals(Object o) {
-        if(super.equals(o)) {
+        if (super.equals(o)) {
             return true;
         }
-        if(!(o instanceof Publisher)) {
+        if (!(o instanceof Publisher)) {
             return false;
         }
 
